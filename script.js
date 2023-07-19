@@ -182,9 +182,11 @@ const btnGenerateDefault = function() {
 }
 
 
-const btnGenerateActionClick = function(num) {
+const btnGenerateActionClick = function() {
 
-  if(num === 0 || length.innerHTML === "0") {
+  numTrue = [...checks].map( el => el.dataset.clicked).filter( el => el === "true").length;
+
+  if(numTrue === 0 || length.innerHTML === "0") {
     fieldPwd.innerHTML = "You must set the options below";
     fieldPwd.classList.add("error");
   } else {
@@ -256,10 +258,8 @@ btnGenerate.addEventListener("mouseout", function(e) {
 
 btnGenerate.addEventListener("click", function(e) {
   e.preventDefault();
-
-  numTrue = [...checks].map( el => el.dataset.clicked).filter( el => el === "true").length;
-
-  btnGenerateActionClick(numTrue);
+  
+  btnGenerateActionClick();
 
 })
 
