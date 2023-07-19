@@ -184,8 +184,8 @@ const btnGenerateDefault = function() {
 
 const btnGenerateActionClick = function(num) {
 
-  if(num === 0) {
-    fieldPwd.innerHTML = "You must select at least one of the options below";
+  if(num === 0 || length.innerHTML === "0") {
+    fieldPwd.innerHTML = "You must set the options below";
     fieldPwd.classList.add("error");
   } else {
     fieldPwd.classList.remove("error");
