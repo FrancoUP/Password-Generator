@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Password generator app</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+
+    <main class="main-container">
+      <div class="project-name">Password Generator</div>
+
+      <div class="pwd-container">
+          <dive class="pwd"></dive>
+          <div class="container-logo-copy">
+            <div class="copy"></div>
+            <object class="logo-copy" title="copy" type="image/svg+xml" data="./images/icon-copy.svg"></object>
+          </div>
+      </div>
+
+      <div class="engine-container">
+          <div class="container-info-character-length">
+            <div class="char-length">Character Length</div>
+            <div  class="length">0</div>
+          </div>
+
+          <div class="slider-cont">
+            <div class="slider">
+              <input class="inp" type="range" min="0" max="100" value="0">
+              <progress min="0" max="100" value="0"></progress>
+            </div>
+          </div>
+
+          <div class="component-selector">
+            <div class="check-container">
+              <div class="check check-upper" data-clicked="false">
+                <svg  width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path  stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg>
+              </div>
+            </div>
+            <div class="choice-text">Include Uppercase Letters</div>
+          </div>
+
+          <div class="component-selector">
+            <div class="check-container">
+              <div class="check check-lower" data-clicked="false">
+                <svg  width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path  stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg>
+              </div>
+            </div>
+            <div class="choice-text">Include Lowercase Letters</div>
+          </div>
+
+          <div class="component-selector">
+            <div class="check-container">
+              <div class="check check-number" data-clicked="false">
+                <svg  width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path  stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg>
+              </div>
+            </div>
+            <div class="choice-text">Include Numbers</div>
+          </div>
+
+          <div class="component-selector">
+            <div class="check-container">
+              <div class="check check-symbol" data-clicked="false">
+                <svg  width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path  stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg>
+              </div>
+            </div>
+            <div class="choice-text">Include Symbols</div>
+          </div>
+
+          <div class="container-strenth-info">
+            <div class="strength">STRENGTH</div>
+            <div class="container-strength-show">
+              <div class="txt-level"></div>
+              <div class="level-bars-container">
+                <div class="level-bar level-bar-1"></div>
+                <div class="level-bar level-bar-2"></div>
+                <div class="level-bar level-bar-3"></div>
+                <div class="level-bar level-bar-4"></div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-generate">
+            <div class="txt-generate">GENERATE</div>
+            <svg  width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path class="logo-arrow" fill="#24232C" d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/></svg>
+          </button>
+      </div>
+    </main>
+
+  </body>
+</html>
