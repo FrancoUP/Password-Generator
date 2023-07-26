@@ -341,6 +341,19 @@ copyBtn.addEventListener("touchend", function(e) {
 
 
 
+  document.body.addEventListener('touchmove', (e) => { 
+  
+     // Questo blocca il refresh della pagina 
+     document.body.style.overscrollBehavior = "none"; 
+     // Questo mantiene lo scroll nonostante il refresh sia deattivato 
+     document.body.style.overflow = "auto"; 
+  
+   }, { passive: false });
+
+
+
+
+
 // let isMouseDown = false;
 // let startX = 0;
 
